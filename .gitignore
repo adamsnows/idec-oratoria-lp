@@ -1,0 +1,74 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# Builds
+build/
+out/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Sistema de Cache
+.cache/
+*.pid
+
+# Testes
+coverage/
+*.lcov
+
+# Configurações de CI/CD locais
+.local
+
+# Git e Configurações
+.git/
+*.lock
+
+# Dependências geradas
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Outros arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Imagens de cache
+*.png.cache
+
+# Mac OS específicos
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows específicos
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux específicos
+*.~undo-tree~
+.next
+.vercel

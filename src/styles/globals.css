@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-Light.ttf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-LightItalic.ttf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-Medium.ttf") format("truetype");
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-BoldItalic.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: italic;
+}
+
+@layer utilities {
+  .focus\:ring-accent {
+    --tw-ring-color: #284bce;
+    box-shadow: 0 0 0 2px var(--tw-ring-color);
+  }
+}
+
+::selection {
+  background-color: #284bce;
+  color: #101010;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #284bce #0b0d0c;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0b0d0c;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #284bce;
+  border-radius: 10px;
+  border: 3px none #000000;
+}
+
+.translate-z-0 {
+  transform: translateZ(0px);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid #284bce;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #284bce;
+}
+
+.swiper-button-prev:after {
+  transform: rotate(180deg);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "" !important;
+  background: url("/arrow.webp") center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: unset !important;
+  width: 86px;
+  height: 141px;
+}
+
+.swiper-button-prev {
+  left: 20px !important;
+}
+.swiper-button-next {
+  right: 20px !important;
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move half the container width */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadein {
+  animation: fadein 1s; /* Adjust duration as needed */
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-prev {
+    left: -6px !important;
+  }
+  .swiper-button-next {
+    right: -6px !important;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    width: 16px;
+  }
+}
+
+@layer utilities {
+  *,
+  *::before,
+  *::after {
+    @apply !important;
+  }
+}
+
+@layer base {
+  .focus\:ring-accent {
+    --tw-ring-color: #284bce;
+    box-shadow: 0 0 0 2px var(--tw-ring-color);
+  }
+  body {
+    @apply bg-primary leading-relaxed;
+  }
+  .page {
+    @apply w-full;
+  }
+  .h1 {
+    @apply xl:text-[42px] text-[32px] leading-tight md:leading-[1.3] font-semibold;
+  }
+  .h1-base {
+    @apply xl:text-[42px] text-[32px] leading-tight md:leading-[1.3];
+  }
+  .h2 {
+    @apply xl:text-[32px] text-[32px] leading-tight md:leading-[1.3] font-semibold;
+  }
+  .h2-base {
+    @apply xl:text-[32px] text-[32px] leading-tight md:leading-[1.3];
+  }
+  .h3 {
+    @apply xl:text-[26px] text-[24px] leading-tight md:leading-[1.3] font-semibold;
+  }
+  .h3-base {
+    @apply xl:text-[26px] text-[24px] leading-tight md:leading-[1.3];
+  }
+  p,
+  .info {
+    @apply leading-[1.8] text-white/80 text-lg font-light;
+  }
+  .btn,
+  .input {
+    @apply h-[52px];
+  }
+  .input {
+    @apply w-full h-[52px] rounded-lg pl-6 bg-white/10 backdrop-blur-sm;
+  }
+  .input,
+  .textarea {
+    @apply bg-white/10 backdrop-blur-sm outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light scrollbar-none;
+  }
+  .textarea {
+    @apply w-full h-[180px] p-6 rounded-lg resize-none;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mySwiper {
+  width: 200px;
+  height: 100%;
+  display: none !important;
+}
+
+.mySwiper .swiper-wrapper {
+  width: 200px;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  width: 200px;
+  height: 100% !important;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 960px) {
+  .mySwiper {
+    display: block !important;
+  }
+  .mySwiper2 {
+    width: 69%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mySwiper .swiper-slide {
+    width: 150px !important;
+  }
+}
