@@ -1,8 +1,3 @@
-import Nav from "@/components/Other/Nav/Nav";
-import Header from "@/components/Other/Header/Header";
-
-import { motion } from "framer-motion";
-import ParticlesContainer from "@/components/Other/ParticlesContainer/ParticlesContainer";
 import { ChildrenInterface } from "@/interfaces/ChildrenInterface";
 
 const Layout = ({ children }: ChildrenInterface) => {
