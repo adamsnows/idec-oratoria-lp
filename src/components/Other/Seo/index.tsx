@@ -4,9 +4,9 @@ import { SeoInterface } from "@/interfaces/SeoInterface";
 const Seo = ({ title, description }: SeoInterface) => {
   return (
     <Head>
-      <meta name="author" content="Pronttus" />
+      <meta name="author" content="IDEC" />
       <meta name="keywords" content="Javascript" />
-      <link rel="fluid-icon" href="/favicon.png" title="Pronttus" />
+      <link rel="fluid-icon" href="/favicon.png" title="IDEC" />
       <link rel="icon" type="svg+xml" href="/favicon.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>IDEC • Formação em oratória</title>
@@ -19,21 +19,21 @@ const Seo = ({ title, description }: SeoInterface) => {
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:site_name" content="Pronttus" />
+      <meta property="og:site_name" content="IDEC" />
       <meta property="og:type" content="website" key="ogtype" />
-      <meta property="og:url" content="https://pronttus.com.br/" />
+      <meta property="og:url" content="https://idecbrasil.com.br/" />
       <meta property="og:image:alt" content={description} />
       <meta property="og:image" content="/pronttus.png" />
-      <meta name="twitter:title" content="Pronttus" />
+      <meta name="twitter:title" content="IDEC" />
       {/* <meta name="twitter:site" content="@vagnermengali" /> */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="/pronttus.png" />
       <meta name="twitter:description" content={description} />
       <meta property="al:ios:app_name" content="Pronttus" />
-      <meta property="al:ios:url" content="https://pronttus.com.br/" />
+      <meta property="al:ios:url" content="https://idecbrasil.com.br/" />
       <meta property="al:android:app_name" content="Pronttus" />
-      <meta property="al:android:url" content="https://pronttus.com.br/" />
-      <link rel="canonical" href="https://pronttus.com.br/" />
+      <meta property="al:android:url" content="https://idecbrasil.com.br/" />
+      <link rel="canonical" href="https://idecbrasil.com.br/" />
       <meta name="theme-color" content="#0b0d0c" />
       <meta name="msapplication-TileColor" content="#0b0d0c" />
       <meta name="msapplication-navbutton-color" content="#0b0d0c" />

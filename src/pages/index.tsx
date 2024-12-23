@@ -30,7 +30,7 @@ const HomePage = () => {
       )}
       {/* <Analytics /> */}
       <Seo
-        description="API de Pix com alta disponibilidade
+        description="Formação em oratória
 "
       />
       {/* <FloatingWhatsApp
