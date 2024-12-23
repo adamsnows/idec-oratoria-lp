@@ -88,15 +88,17 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-2 bg-white w-full h-full z-10 container text-center py-5">
-        <h1 className="text-3xl font-bold text-[#AD720A]">
-          NOSSO PRINCIPAL DIFERENCIAL
-        </h1>
-        <span className="text-base text-gray-900">
-          Nossa formação busca preencher uma lacuna ao capacitar os
-          participantes a compreenderem e trabalharem com comportamentos em
-          escala, abrangendo grupos, equipes, organizações e comunidades.
-        </span>
+      <div className="flex flex-col gap-2 bg-white w-full h-full z-10  text-center py-5">
+        <div className="container">
+          <h1 className="text-3xl font-bold text-[#AD720A]">
+            NOSSO PRINCIPAL DIFERENCIAL
+          </h1>
+          <span className="text-base text-gray-900">
+            Nossa formação busca preencher uma lacuna ao capacitar os
+            participantes a compreenderem e trabalharem com comportamentos em
+            escala, abrangendo grupos, equipes, organizações e comunidades.
+          </span>
+        </div>
       </div>
 
       <div className="flex flex-col gap-2 bg-black w-full h-full z-10 container text-center py-10 ">
@@ -143,11 +145,11 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="h-[40px] w-full bg-accent mb-10" />
-      <div className="container z-10 flex flex-col gap-4 pb-10 border-b border-[#AD720A]">
-        <h1 className="text-3xl font-bold text-[#AD720A] text-center">
-          CONFIRA COMO SERÁ SUA JORNADA:
-        </h1>
+      <div className="h-[40px] w-full bg-accent " />
+      <h1 className="text-3xl font-bold text-[#AD720A] text-center my-10">
+        CONFIRA COMO SERÁ SUA JORNADA:
+      </h1>
+      <div className="container z-10 grid grid-cols-1 md:grid-cols-2 gap-4 pb-10 border-b border-[#AD720A]">
         <div className="border border-lg rounded-lg p-10 border-[#3f3f3f] flex flex-col gap-4 bg-[#070707]">
           <div className="flex flex-col gap-2">
             <span className="text-xl font-bold text-[#ffc663]">
@@ -200,16 +202,17 @@ const Hero: React.FC = () => {
             </span>
           </div>
         </div>
-        <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
-          INICIAR MINHA JORNADA AGORA!
-        </button>
+        <div className="flex justify-center w-full">
+          <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
+            INICIAR MINHA JORNADA AGORA!
+          </button>
+        </div>
       </div>
       <div className="bg-[#0a0a0a]  w-full">
-        <div className="container flex flex-col gap-2 py-10">
-          <h1 className="text-3xl font-bold text-center text-white">
-            DEPOIMENTOS
-          </h1>
-
+        <h1 className="text-3xl font-bold text-center text-white mt-10">
+          DEPOIMENTOS
+        </h1>
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-2 py-10">
           <YouTube
             videoId={"Pgn7CwIjHvU"}
             className={"w-full h-full shadow-md shadow-black/30 z-10"}
@@ -240,12 +243,9 @@ const Hero: React.FC = () => {
             className={"w-full h-full shadow-md shadow-black/30 z-10"}
             iframeClassName={"w-full h-full"}
           />
-          <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
-            iframeClassName={"w-full h-full"}
-          />
-          <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4 mt-5">
+        </div>
+        <div className="flex justify-center">
+          <button className="mx-auto my-5 bg-accent text-black p-3 rounded-full text-base font-bold py-4 ">
             INICIAR MINHA JORNADA AGORA!
           </button>
         </div>
@@ -259,7 +259,7 @@ const Hero: React.FC = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/85 flex flex-col items-center py-10">
-          <div className="rounded-lg container w-full h-[400px] md:h-[600px]">
+          <div className="rounded-lg container w-full h-[400px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25306.193300391653!2d-46.834557!3d-23.50635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01000bfba25d%3A0xc31447c548ca2f19!2sOffice%20Shopping%20Tambor%C3%A9!5e1!3m2!1spt-BR!2sus!4v1734897458319!5m2!1spt-BR!2sus"
               className="w-full h-full border-0 rounded-2xl"
@@ -305,10 +305,10 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="bg-black">
-        <div className="container py-10 flex flex-col gap-4 justify-center items-center">
-          <h1 className="text-3xl font-bold text-center text-white">
-            CONHEÇA OS PRINCIPAIS OBJETIVOS DA NOSSA FORMAÇÃO!
-          </h1>
+        <h1 className="text-3xl font-bold text-center text-white container mt-10">
+          CONHEÇA OS PRINCIPAIS OBJETIVOS DA NOSSA FORMAÇÃO!
+        </h1>
+        <div className="container py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center">
           <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/head.png"
@@ -368,16 +368,18 @@ const Hero: React.FC = () => {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black flex flex-col gap-4 justify-center items-center container text-center">
-          <h1 className="text-3xl font-bold text-white mt-20">
-            JUNTE-SE A NÓS!
-          </h1>
-          <span>
-            Se busca mudança, crescimento pessoal, aprendizado inovador e
-            transformador, o IDEC é o lugar certo para você. Junte-se a nós
-            nessa jornada de autodescorta e desenvolimento.
-          </span>
-          <span className="font-bold">Extraia o melhor de si mesmo.</span>
+        <div className="absolute inset-0 bg-gradient-to-t from-black flex flex-col gap-4 justify-center items-center text-center">
+          <div className="container">
+            <h1 className="text-3xl font-bold text-white mt-20">
+              JUNTE-SE A NÓS!
+            </h1>
+            <span>
+              Se busca mudança, crescimento pessoal, aprendizado inovador e
+              transformador, o IDEC é o lugar certo para você. Junte-se a nós
+              nessa jornada de autodescorta e desenvolimento.
+            </span>
+            <span className="font-bold">Extraia o melhor de si mesmo.</span>
+          </div>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center container py-10">
