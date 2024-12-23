@@ -309,7 +309,7 @@ const Hero: React.FC = () => {
           <h1 className="text-3xl font-bold text-center text-white">
             CONHEÇA OS PRINCIPAIS OBJETIVOS DA NOSSA FORMAÇÃO!
           </h1>
-          <div className="flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
+          <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/head.png"
               alt=""
@@ -319,7 +319,7 @@ const Hero: React.FC = () => {
               Aumentar a autoconsciência e a autoconfiança
             </span>
           </div>
-          <div className="flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
+          <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/graphics.png"
               alt=""
@@ -329,7 +329,7 @@ const Hero: React.FC = () => {
               Desenvolver habilidades e competências
             </span>
           </div>
-          <div className="flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
+          <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/rounded.png"
               alt=""
@@ -339,7 +339,7 @@ const Hero: React.FC = () => {
               Melhorar a comunicação e o relacionamento interpessoal
             </span>
           </div>
-          <div className="flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
+          <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/target.png"
               alt=""
@@ -349,7 +349,7 @@ const Hero: React.FC = () => {
               Potencializar o foco e a motivação
             </span>
           </div>
-          <div className="flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
+          <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/stars.png"
               alt=""
