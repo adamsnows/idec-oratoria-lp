@@ -45,19 +45,19 @@
 
 @layer utilities {
   .focus\:ring-accent {
-    --tw-ring-color: #284bce;
+    --tw-ring-color: #ffc663;
     box-shadow: 0 0 0 2px var(--tw-ring-color);
   }
 }
 
 ::selection {
-  background-color: #284bce;
+  background-color: #ffc663;
   color: #101010;
 }
 
 * {
   scrollbar-width: auto;
-  scrollbar-color: #284bce #0b0d0c;
+  scrollbar-color: #ffc663 #0b0d0c;
 }
 
 /* Chrome, Edge, and Safari */
@@ -70,7 +70,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #284bce;
+  background-color: #ffc663;
   border-radius: 10px;
   border: 3px none #000000;
 }
@@ -82,7 +82,7 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   background-color: transparent;
-  border: 1px solid #284bce;
+  border: 1px solid #ffc663;
   width: 15px;
   height: 15px;
 }
@@ -91,7 +91,7 @@
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #284bce;
+  color: #ffc663;
 }
 
 .swiper-button-prev:after {
@@ -171,7 +171,7 @@
 
 @layer base {
   .focus\:ring-accent {
-    --tw-ring-color: #284bce;
+    --tw-ring-color: #ffc663;
     box-shadow: 0 0 0 2px var(--tw-ring-color);
   }
   body {

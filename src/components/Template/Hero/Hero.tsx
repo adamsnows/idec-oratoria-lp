@@ -6,36 +6,44 @@ import YouTube from "react-youtube";
 const Hero: React.FC = () => {
   return (
     <div className="flex flex-col relative overflow-hidden">
-      <div className="absolute z-0">
+      <div className="absolute z-0 flex justify-center items-center md:min-h-screen">
         <img
           src="/banners/mobile/mob_02.jpg"
           alt=""
-          className="h-[1350px] object-cover "
+          className="h-[1350px] object-cover md:hidden"
         />
-        <div className="absolute inset-0 bg-black/70"></div>
+        <img
+          src="/banners/4k/banner_2.jpg"
+          alt=""
+          className="w-full h-screen object-cover hidden md:block"
+        />
+        <div className="absolute inset-0 bg-black/70 md:bg-black/50" />
       </div>
 
-      <div className="h-[70px] border-b w-full border-accent flex justify-center items-center z-10 bg-black">
-        <img src="/idec/logo-light.png" alt="logo" className="w-[200px]" />
+      <div className="absolute top-0 h-[70px] border-b w-full border-accent flex justify-center items-center z-10 bg-black">
+        <img src="/idec/logo-light.png" alt="logo" className="w-[200px] " />
       </div>
-      <div className="flex flex-col justify-center items-center text-center container z-10 my-5">
-        <h1 className="text-4xl font-bold">FORMAÇÃO DE</h1>
-        <h1 className="text-4xl font-bold text-accent">
-          ESPECIALISTA COMPORTAMENTAL
-        </h1>
-        <div className="my-10 flex flex-col gap-2">
-          <span className="text-sm">
-            Reconhecida pelo MEC, alcance seus objetivos e desbloqueie seu
-            potencial máximo.
-          </span>
-          <span className="text-sm font-bold">
-            Certificado Internacional em 4 dias!
-          </span>
+      <div className="flex flex-col md:flex-row md:gap-20 justify-center items-center text-center container z-10 my-5 md:min-h-screen">
+        <div className="flex flex-col">
+          <h1 className="text-4xl font-bold">FORMAÇÃO DE</h1>
+          <h1 className="text-4xl font-bold text-accent">
+            ESPECIALISTA COMPORTAMENTAL
+          </h1>
+          <div className="my-10 flex flex-col gap-2">
+            <span className="text-sm">
+              Reconhecida pelo MEC, alcance seus objetivos e desbloqueie seu
+              potencial máximo.
+            </span>
+            <span className="text-sm font-bold">
+              Certificado Internacional em 4 dias!
+            </span>
+            <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
+              <FaCalendarCheck className="text-accent" />
+              <span className="text-sm">20 à 23 de Fevereiro de 2025</span>
+            </div>
+          </div>
         </div>
-        <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
-          <FaCalendarCheck className="text-accent" />
-          <span className="text-sm">20 à 23 de Fevereiro de 2025</span>
-        </div>
+
         <div className="border-2 border-accent w-full rounded-lg relative mt-20 p-6 backdrop-blur-md">
           <img
             src="/selos/MEC_01.png"
@@ -88,7 +96,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-2 bg-white w-full h-full z-10  text-center py-5">
+      <div className="flex flex-col gap-2 bg-white w-full h-full z-10  text-center py-5 -mt-10 md:py-20">
         <div className="container">
           <h1 className="text-3xl font-bold text-[#AD720A]">
             NOSSO PRINCIPAL DIFERENCIAL
@@ -109,7 +117,7 @@ const Hero: React.FC = () => {
           <FaArrowDown className="text-4xl mx-auto" />
         </div>
         <div className="border-b border-[#AD720A] w-full" />
-        <div className="flex gap-4 flex-col my-5">
+        <div className="f gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
           <div className="flex gap-5 items-center text-start">
             <FaCheckDouble className="text-accent text-2xl flex-shrink-0" />
             <span className="text-sm ">
@@ -149,7 +157,7 @@ const Hero: React.FC = () => {
       <h1 className="text-3xl font-bold text-[#AD720A] text-center my-10">
         CONFIRA COMO SERÁ SUA JORNADA:
       </h1>
-      <div className="container z-10 grid grid-cols-1 md:grid-cols-2 gap-4 pb-10 border-b border-[#AD720A]">
+      <div className="container z-10 grid grid-cols-1 md:grid-cols-2 gap-4 pb-10 ">
         <div className="border border-lg rounded-lg p-10 border-[#3f3f3f] flex flex-col gap-4 bg-[#070707]">
           <div className="flex flex-col gap-2">
             <span className="text-xl font-bold text-[#ffc663]">
@@ -202,12 +210,14 @@ const Hero: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center w-full">
-          <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
-            INICIAR MINHA JORNADA AGORA!
-          </button>
-        </div>
       </div>
+
+      <div className="flex justify-center w-full border-b border-[#AD720A] pb-10">
+        <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
+          INICIAR MINHA JORNADA AGORA!
+        </button>
+      </div>
+
       <div className="bg-[#0a0a0a]  w-full">
         <h1 className="text-3xl font-bold text-center text-white mt-10">
           DEPOIMENTOS
@@ -252,32 +262,37 @@ const Hero: React.FC = () => {
       </div>
       <div className="h-[40px] w-full bg-accent" />
 
-      <div className="h-[850px] relative">
+      <div className="h-[850px] md:h-auto relative">
         <img
-          src="/unidades/mrng_1.jpg"
+          src="/unidades/alphvl_1.jpg"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full object-cover h-full md:max-h-[550px]"
         />
-        <div className="absolute inset-0 bg-black/85 flex flex-col items-center py-10">
-          <div className="rounded-lg container w-full h-[400px]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25306.193300391653!2d-46.834557!3d-23.50635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01000bfba25d%3A0xc31447c548ca2f19!2sOffice%20Shopping%20Tambor%C3%A9!5e1!3m2!1spt-BR!2sus!4v1734897458319!5m2!1spt-BR!2sus"
-              className="w-full h-full border-0 rounded-2xl"
-              allowFullScreen
-              loading="lazy"
-            />
-            <div className="flex flex-col gap-4 text-2xl font-bold text-center py-10">
+        <div className="absolute inset-0 bg-black/85 md:bg-black/50 flex flex-col items-center py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
+            <div className="font-bold text-2xl text-center">
               <h1>Alphaville - São Paulo</h1>
               <h1>Office Shopping Tamboré</h1>
-              <span className="bg-accent rounded-full py-3 w-full text-lg font-normal text-black">
-                Turma presencial
-              </span>
-              <span className="bg-accent rounded-full py-3 w-full text-lg font-normal text-black">
-                20 à 23 de Fevereiro de 2025
-              </span>
-              <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
-                INICIAR MINHA JORNADA AGORA!
-              </button>
+              <div className="flex flex-col gap-4 text-2xl font-bold text-center py-10">
+                <span className="bg-accent rounded-full py-3 w-full text-lg font-normal text-black">
+                  Turma presencial
+                </span>
+                <span className="bg-accent rounded-full py-3 w-full text-lg font-normal text-black">
+                  20 à 23 de Fevereiro de 2025
+                </span>
+                <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
+                  INICIAR MINHA JORNADA AGORA!
+                </button>
+              </div>
+            </div>
+
+            <div className="rounded-lg container w-full h-[400px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25306.193300391653!2d-46.834557!3d-23.50635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01000bfba25d%3A0xc31447c548ca2f19!2sOffice%20Shopping%20Tambor%C3%A9!5e1!3m2!1spt-BR!2sus!4v1734897458319!5m2!1spt-BR!2sus"
+                className="w-full h-full border-0 rounded-2xl"
+                allowFullScreen
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -308,7 +323,7 @@ const Hero: React.FC = () => {
         <h1 className="text-3xl font-bold text-center text-white container mt-10">
           CONHEÇA OS PRINCIPAIS OBJETIVOS DA NOSSA FORMAÇÃO!
         </h1>
-        <div className="container py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center">
+        <div className="container py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
           <div className="min-h-[215px] flex flex-col gap-4 border border-accent rounded-lg p-10 bg-[#0d0d0d]">
             <img
               src="/placeholders/head.png"
@@ -366,7 +381,12 @@ const Hero: React.FC = () => {
         <img
           src="/idec/temporario.jpg"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top max-h-[750px] md:hidden"
+        />
+        <img
+          src="/banners/4k/banner_2.jpg"
+          alt=""
+          className="w-full h-full object-cover object-top max-h-[750px] hidden md:block"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black flex flex-col gap-4 justify-center items-center text-center">
           <div className="container">

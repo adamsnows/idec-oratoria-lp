@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <AnimatePresence mode="wait">
         <motion.div
           key={router.route}
-          className="min-h-dvh bg-black text-[#ececec]"
+          className="min-h-dvh bg-black text-[#ececec] scroll-smooth"
         >
           <Transition />
           <Component {...pageProps} />
