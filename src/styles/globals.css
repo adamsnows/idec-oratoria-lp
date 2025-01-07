@@ -2,47 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "OverusedGrotesk";
-  src: url("/fonts/OverusedGrotesk-Light.ttf") format("truetype");
-  font-weight: 300; /* Light */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OverusedGrotesk";
-  src: url("/fonts/OverusedGrotesk-LightItalic.ttf") format("truetype");
-  font-weight: 300; /* Light */
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "OverusedGrotesk";
-  src: url("/fonts/OverusedGrotesk-Regular.ttf") format("truetype");
-  font-weight: 400; /* Regular */
-  font-style: normal;
-}
-@font-face {
-  font-family: "OverusedGrotesk";
-  src: url("/fonts/OverusedGrotesk-Medium.ttf") format("truetype");
-  font-weight: 600; /* Semibold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OverusedGrotesk";
-  src: url("/fonts/OverusedGrotesk-Bold.ttf") format("truetype");
-  font-weight: 700; /* Bold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OverusedGrotesk";
-  src: url("/fonts/OverusedGrotesk-BoldItalic.ttf") format("truetype");
-  font-weight: 700; /* Bold */
-  font-style: italic;
-}
-
 @layer utilities {
   .focus\:ring-accent {
     --tw-ring-color: #f3b603;
