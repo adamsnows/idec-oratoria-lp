@@ -23,53 +23,32 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 h-[70px] border-b w-full border-accent flex justify-center items-center z-10 bg-black">
         <img src="/idec/logo-light.png" alt="logo" className="w-[200px] " />
       </div>
-      <div className="flex flex-col md:flex-row md:gap-20 justify-center items-center text-center container z-10 my-5 md:min-h-screen h-full mt-20">
+      <div className="flex flex-col md:flex-row md:gap-20 justify-center items-center text-center container z-10 my-5 md:min-h-screen">
         <div className="flex flex-col">
           <h1 className="text-4xl font-bold">FORMAÇÃO DE</h1>
           <h1 className="text-4xl font-bold text-accent">
-            COMUNICAÇÃO E ORATÓRIA
+            ESPECIALISTA COMPORTAMENTAL
           </h1>
           <div className="my-10 flex flex-col gap-2">
             <span className="text-sm">
               Reconhecida pelo MEC, alcance seus objetivos e desbloqueie seu
               potencial máximo.
             </span>
-
-            <span className="text-sm ">
-              Desperte o comunicador de alto impacto que existe em você!
-            </span>
             <span className="text-sm font-bold">
               Certificado Internacional em 4 dias!
             </span>
             <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
               <FaCalendarCheck className="text-accent" />
-              <div className="flex flex-col items-start">
-                <span className="text-sm">22 e 23 de Fevereiro de 2025</span>
-                <span className="text-sm font-bold">EM MARINGÁ</span>
-              </div>
-            </div>
-            <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
-              <FaCalendarCheck className="text-accent" />
-              <div className="flex flex-col items-start">
-                <span className="text-sm">14 e 15 de Março de 2025</span>
-                <span className="text-sm font-bold">EM ALPHAVILLE</span>
-              </div>
-            </div>
-            <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
-              <FaCalendarCheck className="text-accent" />
-              <div className="flex flex-col items-start">
-                <span className="text-sm">29 e 30 de Março de 2025</span>
-                <span className="text-sm font-bold">EM SALVADOR</span>
-              </div>
+              <span className="text-sm">20 à 23 de Fevereiro de 2025</span>
             </div>
           </div>
         </div>
 
-        <div className="border-2 border-accent w-full rounded-lg relative mt-10 xl:mt-20 p-6 backdrop-blur-md mb-20">
+        <div className="border-2 border-accent w-full rounded-lg relative mt-20 p-6 backdrop-blur-md">
           <img
             src="/selos/MEC_01.png"
             alt=""
-            className="absolute -mt-16 -me-5 top-0 right-0 h-[100px] xl:h-[150px] rotate-[10deg]"
+            className="absolute -mt-16 -me-5 top-0 right-0 h-[100px] rotate-[10deg]"
           />
           <div className="flex flex-col mt-4">
             <span>Iniciar minha formação hoje!</span>
@@ -119,125 +98,122 @@ const Hero: React.FC = () => {
       </div>
       <div className="flex flex-col gap-2 bg-white w-full h-full z-10  text-center py-5 -mt-10 md:py-20">
         <div className="container">
-          <h1 className="text-3xl font-bold text-accent uppercase">
-            Por que você precisa desta formação?
+          <h1 className="text-3xl font-bold text-[#AD720A]">
+            NOSSO PRINCIPAL DIFERENCIAL
           </h1>
           <span className="text-base text-gray-900">
-            A comunicação é a habilidade número 1 para o sucesso profissional e
-            pessoal. Quer se destacar em sua carreira, conquistar a confiança de
-            grandes audiências e transmitir suas ideias com clareza e impacto?{" "}
-            <br />A Formação em Comunicação e Oratória do IDEC é o caminho para
-            transformar sua voz na sua maior ferramenta de influência.
+            Nossa formação busca preencher uma lacuna ao capacitar os
+            participantes a compreenderem e trabalharem com comportamentos em
+            escala, abrangendo grupos, equipes, organizações e comunidades.
           </span>
         </div>
       </div>
 
       <div className="flex flex-col gap-2 bg-black w-full h-full z-10 container text-center py-10 ">
-        <h1 className="text-3xl font-bold text-accent">
+        <h1 className="text-3xl font-bold text-[#AD720A]">
           PARA QUEM É NOSSA FORMAÇÃO?
         </h1>
-        <div className="mx-auto border p-4 rounded-full my-5 border-accent">
+        <div className="mx-auto border p-4 rounded-full my-5 border-[#AD720A]">
           <FaArrowDown className="text-4xl mx-auto" />
         </div>
-        <div className="border-b border-accent w-full" />
+        <div className="border-b border-[#AD720A] w-full" />
         <div className="f gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
           <div className="flex gap-5 items-center text-start">
             <FaCheckDouble className="text-accent text-2xl flex-shrink-0" />
             <span className="text-sm ">
-              Gestores e líderes que precisam se comunicar de forma clara e
-              assertiva.
+              Líderes em busca de aprimorar suas habilidades de liderança e
+              comunicação.
             </span>
           </div>
           <div className="flex gap-5 items-center text-start">
             <FaCheckDouble className="text-accent text-2xl flex-shrink-0" />
             <span className="text-sm ">
-              Professores, palestrantes e treinadores que desejam causar impacto
-              em suas audiências.
+              Profissionais de RH que desejam entender melhor o comportamento
+              humano.
             </span>
           </div>
           <div className="flex gap-5 items-center text-start">
             <FaCheckDouble className="text-accent text-2xl flex-shrink-0" />
             <span className="text-sm ">
-              Empreendedores que precisam vender suas ideias e inspirar seus
-              times.
+              Coaches e terapeutas que buscam especialização em técnicas.
             </span>
           </div>
           <div className="flex gap-5 items-center text-start">
             <FaCheckDouble className="text-accent text-2xl flex-shrink-0" />
             <span className="text-sm ">
-              Profissionais de vendas que querem persuadir e negociar com
-              excelência.
+              Empreendedores em busca de melhores habilidades de comunicação.
             </span>
           </div>
           <div className="flex gap-5 items-center text-start">
             <FaCheckDouble className="text-accent text-2xl flex-shrink-0" />
             <span className="text-sm ">
-              Qualquer pessoa que deseja vencer o medo de falar em público e
-              transmitir confiança.
+              Pessoas que buscam autodesenvolvimento e crescimento em todas as
+              áreas.
             </span>
           </div>
         </div>
       </div>
       <div className="h-[40px] w-full bg-accent " />
-      <h1 className="text-3xl font-bold text-accent text-center my-10">
-        O QUE VOCÊ VAI APRENDER?
+      <h1 className="text-3xl font-bold text-[#AD720A] text-center my-10">
+        CONFIRA COMO SERÁ SUA JORNADA:
       </h1>
       <div className="container z-10 grid grid-cols-1 md:grid-cols-2 gap-4 pb-10 ">
         <div className="border border-lg rounded-lg p-10 border-[#3f3f3f] flex flex-col gap-4 bg-[#070707]">
           <div className="flex flex-col gap-2">
-            <span className="text-xl font-bold text-accent">
-              Domine a arte de falar em público:
+            <span className="text-xl font-bold text-[#ffc663]">
+              PNL na prática:
             </span>
             <div className="border-b border-[#3f3f3f] w-16 my-1"></div>
             <span className="text-sm text-gray-300">
-              Técnicas práticas para estruturar discursos e apresentações que
-              engajam e inspiram.
+              Aprenda a identificar e trabalhar com comportamentos em escala,
+              abrangendo grupos, equipes, organizações e comunidades.
             </span>
           </div>
         </div>
 
         <div className="border border-lg rounded-lg p-10 border-[#3f3f3f] flex flex-col gap-4 bg-[#070707]">
           <div className="flex flex-col gap-2">
-            <span className="text-2xl font-bold text-accent">
-              Supere o medo de falar em público
+            <span className="text-2xl font-bold text-[#ffc663]">
+              Análise em perfil comportamental
             </span>
             <div className="border-b border-[#3f3f3f] w-16 my-1"></div>
             <span className="text-sm text-gray-300">
-              Controle suas emoções e desenvolva confiança para enfrentar
-              qualquer audiência.
+              Explore métodos para avaliar e compreender perfis comportamentais,
+              impulsionando a colaboração e eficácia nas interações.
             </span>
           </div>
         </div>
 
         <div className="border border-lg rounded-lg p-10 border-[#3f3f3f] flex flex-col gap-4 bg-[#070707]">
           <div className="flex flex-col gap-2">
-            <span className="text-2xl font-bold text-accent">
-              Melhore sua comunicação verbal e não verbal
+            <span className="text-2xl font-bold text-[#ffc663]">
+              Coaching performance
             </span>
             <div className="border-b border-[#3f3f3f] w-16 my-1"></div>
             <span className="text-sm text-gray-300">
-              Aprenda a usar gestos, postura e entonação para potencializar sua
-              mensagem.
+              Desenvolva habilidade de coaching para potencializar o desempenho
+              de indivíduos e equipes, promovendo crescimento e resultados
+              excepcionais.
             </span>
           </div>
         </div>
 
         <div className="border border-lg rounded-lg p-10 border-[#3f3f3f] flex flex-col gap-4 bg-[#070707]">
           <div className="flex flex-col gap-2">
-            <span className="text-2xl font-bold text-accent">
-              Persuadir e influenciar
+            <span className="text-2xl font-bold text-[#ffc663]">
+              Especialista comportamental
             </span>
             <div className="border-b border-[#3f3f3f] w-16 my-1 "></div>
             <span className="text-sm text-gray-300">
-              Descubra como comunicar ideias com clareza e convencer diferentes
-              tipos de públicos.
+              Obtenha as ferramentas necessárias para promover o desenvolvimento
+              pessoal e profissional de indivíduos e equipes.
             </span>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center w-full border-b border-accent pb-10">
-        <button className="bg-accent text-black  rounded-full text-base font-bold py-4 px-4">
+      <div className="flex justify-center w-full border-b border-[#AD720A] pb-10">
+        <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
           INICIAR MINHA JORNADA AGORA!
         </button>
       </div>
@@ -324,18 +300,17 @@ const Hero: React.FC = () => {
       <div className="bg-white">
         <div className="container py-10">
           <div className="flex flex-col gap-6">
-            <h1 className="text-accent text-2xl text-center uppercase font-bold">
-              POR QUE O IDEC É A SUA MELHOR ESCOLHA?
+            <h1 className="text-[#AD720A] text-2xl text-center uppercase">
+              Nossa grade curricular é uma das mais profundas e práticas do
+              mercado de desenvolvimento
             </h1>
             <span className="text-base text-gray-900 text-center">
-              O <span className="font-bold">IDEC</span> é uma referência
-              nacional e internacional em desenvolvimento humano, com unidades
-              em Alphaville – São Paulo, Maringá – Paraná, Salvador – Bahia e
-              Lisboa – Portugal. <br />
-              Nossos professores são especialistas no desenvolvimento
-              comportamental, e nossa metodologia já transformou a vida de
-              milhares de alunos, preparando-os para liderar e inspirar no
-              mercado global.
+              Somos um resultado de um profundo trabalho de integração entre
+              algumas das mais consagradas técnicas comportamentais e um plano
+              educacional andragógico direcionado especificamente para adultos.
+              Nós utilizamos uma abordagem educacional que se concentra na forma
+              como os adultos aprendem, se desenvolvem e replicam esse
+              conhecimento.
             </span>
 
             <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4 mt-5">
@@ -416,15 +391,14 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black flex flex-col gap-4 justify-center items-center text-center">
           <div className="container">
             <h1 className="text-3xl font-bold text-white mt-20">
-              GARANTA SUA VAGA AGORA MESMO!
+              JUNTE-SE A NÓS!
             </h1>
-            <div className="flex flex-col">
-              <span>
-                As vagas são limitadas e costumam esgotar rapidamente. Não perca
-                esta oportunidade de transformar sua vida e sua carreira.
-              </span>
-              <span className="font-bold">Extraia o melhor de si mesmo.</span>
-            </div>
+            <span>
+              Se busca mudança, crescimento pessoal, aprendizado inovador e
+              transformador, o IDEC é o lugar certo para você. Junte-se a nós
+              nessa jornada de autodescorta e desenvolimento.
+            </span>
+            <span className="font-bold">Extraia o melhor de si mesmo.</span>
           </div>
         </div>
       </div>

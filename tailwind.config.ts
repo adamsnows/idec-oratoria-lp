@@ -31,7 +31,7 @@ module.exports = {
       colors: {
         primary: "#0b0d0c",
         secondary: "#64748B",
-        accent: "#ffc663",
+        accent: "#f3b603",
 
         /*
          * body, modal, drawer background & ring-offset-color
