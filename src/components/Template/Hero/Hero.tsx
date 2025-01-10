@@ -30,12 +30,12 @@ const Hero: React.FC = () => {
         <img src="/idec/logo-light.png" alt="logo" className="w-[200px] " />
       </div>
       <div className="flex flex-col md:flex-row md:gap-20 justify-center items-center text-center container z-10 my-5 md:min-h-screen h-full mt-20">
-        <div className="flex flex-col">
+        <div className="flex flex-col border p-10 rounded-lg border-accent max-h-[730px] xl:max-h-auto">
           <h1 className="text-4xl font-bold">FORMAÇÃO DE</h1>
           <h1 className="text-4xl font-bold text-accent">
             COMUNICAÇÃO E ORATÓRIA
           </h1>
-          <div className="my-10 flex flex-col gap-2">
+          <div className="flex flex-col gap-2">
             <span className="text-sm">
               Reconhecida pelo MEC, alcance seus objetivos e desbloqueie seu
               potencial máximo.
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
               Certificado Internacional em 4 dias
             </span>
 
-            <span className="text-sm font-bold">
+            <span className="font-bold text-3xl text-accent uppercase">
               Escolha abaixo a melhor opção!
             </span>
 
