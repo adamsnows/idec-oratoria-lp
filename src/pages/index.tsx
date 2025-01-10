@@ -15,7 +15,6 @@ import Plans from "@/components/Template/Plans/Plans";
 import Services from "@/components/Template/Services/Services";
 import { createClickUpTask } from "@/utils/create-task";
 import { Analytics } from "@vercel/analytics/react";
-import "animate.css";
 import { useState } from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { Toaster } from "react-hot-toast";

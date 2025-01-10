@@ -1,11 +1,17 @@
+import Link from "next/link";
 import React from "react";
 import { FaCalendarCheck } from "react-icons/fa";
 import { FaArrowDown, FaCheckDouble } from "react-icons/fa";
 import YouTube from "react-youtube";
 
 const Hero: React.FC = () => {
+  const scrollToTop = () => {
+    const topElement = document.getElementById("top");
+    topElement?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="flex flex-col relative overflow-hidden">
+    <div className="flex flex-col relative overflow-hidden" id="top">
       <div className="absolute z-0 flex justify-center items-center md:min-h-screen">
         <img
           src="/banners/mobile/mob_02.jpg"
@@ -39,33 +45,50 @@ const Hero: React.FC = () => {
               Desperte o comunicador de alto impacto que existe em você!
             </span>
             <span className="text-sm font-bold">
-              Certificado Internacional em 4 dias!
+              Certificado Internacional em 4 dias
             </span>
-            <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
-              <FaCalendarCheck className="text-accent" />
+
+            <span className="text-sm font-bold">
+              Escolha abaixo a melhor opção!
+            </span>
+
+            <Link
+              className="border border-accent rounded-full flex gap-4 items-center justify-center p-6 animate-pulse hover:bg-accent duration-200 group"
+              href="https://sun.eduzz.com/E05ZGOVK9X"
+              target="_blank"
+            >
+              <FaCalendarCheck className="text-accent group-hover:text-white" />
               <div className="flex flex-col items-start">
                 <span className="text-sm">22 e 23 de Fevereiro de 2025</span>
                 <span className="text-sm font-bold">EM MARINGÁ</span>
               </div>
-            </div>
-            <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
-              <FaCalendarCheck className="text-accent" />
+            </Link>
+            <Link
+              className="border border-accent rounded-full flex gap-4 items-center justify-center p-6 animate-pulse hover:bg-accent duration-200 group"
+              href="https://sun.eduzz.com/VWG37P6V07"
+              target="_blank"
+            >
+              <FaCalendarCheck className="text-accent group-hover:text-white" />
               <div className="flex flex-col items-start">
                 <span className="text-sm">14 e 15 de Março de 2025</span>
                 <span className="text-sm font-bold">EM ALPHAVILLE</span>
               </div>
-            </div>
-            <div className="border border-accent rounded-full flex gap-4 items-center justify-center p-6">
-              <FaCalendarCheck className="text-accent" />
+            </Link>
+            <Link
+              className="border border-accent rounded-full flex gap-4 items-center justify-center p-6 animate-pulse hover:bg-accent duration-200 group"
+              href="https://sun.eduzz.com/KW83P7DO01"
+              target="_blank"
+            >
+              <FaCalendarCheck className="text-accent group-hover:text-white" />
               <div className="flex flex-col items-start">
                 <span className="text-sm">29 e 30 de Março de 2025</span>
                 <span className="text-sm font-bold">EM SALVADOR</span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
-        <div className="border-2 border-accent w-full rounded-lg relative mt-10 xl:mt-20 p-6 backdrop-blur-md mb-20">
+        {/* <div className="border-2 border-accent w-full rounded-lg relative mt-10 xl:mt-20 p-6 backdrop-blur-md mb-20">
           <img
             src="/selos/MEC_01.png"
             alt=""
@@ -115,6 +138,21 @@ const Hero: React.FC = () => {
               SEUS DADOS ESTÃO 100% PROTEGIDOS
             </span>
           </div>
+        </div> */}
+      </div>
+
+      <div className="flex flex-col gap-2 bg-black w-full h-full z-10 container text-center py-10 ">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mb-10 xl:-mt-20">
+          <img
+            src="/banners/formacao/oratoria.png"
+            alt=""
+            className="rounded-lg"
+          />
+          <img
+            src="/banners/formacao/oratoria-2.png"
+            alt=""
+            className="rounded-lg"
+          />
         </div>
       </div>
       <div className="flex flex-col gap-2 bg-white w-full h-full z-10  text-center py-5 -mt-10 md:py-20">
@@ -136,7 +174,7 @@ const Hero: React.FC = () => {
         <h1 className="text-3xl font-bold text-accent">
           PARA QUEM É NOSSA FORMAÇÃO?
         </h1>
-        <div className="mx-auto border p-4 rounded-full my-5 border-accent">
+        <div className="mx-auto border p-4 rounded-full my-5 border-accent animate-bounce">
           <FaArrowDown className="text-4xl mx-auto" />
         </div>
         <div className="border-b border-accent w-full" />
@@ -237,7 +275,10 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="flex justify-center w-full border-b border-accent pb-10">
-        <button className="bg-accent text-black  rounded-full text-base font-bold py-4 px-4">
+        <button
+          className="bg-accent text-black  rounded-full text-base font-bold py-4 px-4"
+          onClick={scrollToTop}
+        >
           INICIAR MINHA JORNADA AGORA!
         </button>
       </div>
@@ -246,32 +287,7 @@ const Hero: React.FC = () => {
         <h1 className="text-3xl font-bold text-center text-white mt-10">
           DEPOIMENTOS
         </h1>
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-2 py-10">
-          <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
-            iframeClassName={"w-full h-full"}
-          />
-          <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
-            iframeClassName={"w-full h-full"}
-          />
-          <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
-            iframeClassName={"w-full h-full"}
-          />
-          <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
-            iframeClassName={"w-full h-full"}
-          />
-          <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
-            iframeClassName={"w-full h-full"}
-          />
+        <div className="container grid grid-cols-1 gap-2 py-10">
           <YouTube
             videoId={"Pgn7CwIjHvU"}
             className={"w-full h-full shadow-md shadow-black/30 z-10"}
@@ -279,7 +295,10 @@ const Hero: React.FC = () => {
           />
         </div>
         <div className="flex justify-center">
-          <button className="mx-auto my-5 bg-accent text-black p-3 rounded-full text-base font-bold py-4 ">
+          <button
+            className="mx-auto my-5 bg-accent text-black p-3 rounded-full text-base font-bold py-4 "
+            onClick={scrollToTop}
+          >
             INICIAR MINHA JORNADA AGORA!
           </button>
         </div>
@@ -304,7 +323,10 @@ const Hero: React.FC = () => {
                 <span className="bg-accent rounded-full py-3 w-full text-lg font-normal text-black">
                   20 à 23 de Fevereiro de 2025
                 </span>
-                <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4">
+                <button
+                  className="bg-accent text-black p-3 rounded-full text-base font-bold py-4"
+                  onClick={scrollToTop}
+                >
                   INICIAR MINHA JORNADA AGORA!
                 </button>
               </div>
@@ -338,13 +360,16 @@ const Hero: React.FC = () => {
               mercado global.
             </span>
 
-            <button className="bg-accent text-black p-3 rounded-full text-base font-bold py-4 mt-5">
+            <button
+              className="bg-accent text-black p-3 rounded-full text-base font-bold py-4 mt-5 max-w-[300px] mx-auto"
+              onClick={scrollToTop}
+            >
               INICIAR MINHA JORNADA AGORA!
             </button>
           </div>
         </div>
       </div>
-      <div className="bg-black">
+      {/* <div className="bg-black">
         <h1 className="text-3xl font-bold text-center text-white container mt-10">
           CONHEÇA OS PRINCIPAIS OBJETIVOS DA NOSSA FORMAÇÃO!
         </h1>
@@ -401,7 +426,7 @@ const Hero: React.FC = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="flex relative">
         <img
           src="/idec/temporario.jpg"
