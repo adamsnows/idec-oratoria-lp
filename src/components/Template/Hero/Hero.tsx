@@ -314,6 +314,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-black/85 md:bg-black/50 flex flex-col items-center py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
             <div className="font-bold text-2xl text-center">
+              <h1 className="text-accent mb-5">TURMA MAIS PRÓXIMA</h1>
               <h1>Alphaville - São Paulo</h1>
               <h1>Office Shopping Tamboré</h1>
               <div className="flex flex-col gap-4 text-2xl font-bold text-center py-10">
