@@ -305,7 +305,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="h-[40px] w-full bg-accent" />
 
-      <div className="h-[850px] md:h-auto relative">
+      {/* <div className="h-[850px] md:h-auto relative">
         <img
           src="/unidades/alphvl_1.jpg"
           alt=""
@@ -343,7 +343,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="bg-white">
         <div className="container py-10">
           <div className="flex flex-col gap-6">
