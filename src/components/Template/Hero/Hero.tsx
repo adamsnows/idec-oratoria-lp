@@ -363,7 +363,7 @@ const Hero: React.FC = () => {
             <YouTube
               videoId={"Pgn7CwIjHvU"}
               className={"w-full h-full shadow-md shadow-black/30 z-10"}
-              iframeClassName={"w-full h-[600px]"}
+              iframeClassName={"w-full h-[600px] mx-auto"}
             />
 
             <button
