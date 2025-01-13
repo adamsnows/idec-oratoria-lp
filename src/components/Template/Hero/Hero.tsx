@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         <img src="/idec/logo-light.png" alt="logo" className="w-[200px] " />
       </div>
       <div className="flex flex-col md:flex-row md:gap-20 justify-center items-center text-center container z-10 my-5 md:min-h-screen h-full mt-20">
-        <div className="flex flex-col border p-10 rounded-lg border-accent max-h-[730px] xl:max-h-auto">
+        <div className="flex flex-col  p-10 rounded-lg border-accent max-h-[730px] xl:max-h-auto">
           <h1 className="text-4xl font-bold">FORMAÇÃO DE</h1>
           <h1 className="text-4xl font-bold text-accent">
             COMUNICAÇÃO E ORATÓRIA
