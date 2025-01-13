@@ -360,6 +360,12 @@ const Hero: React.FC = () => {
               mercado global.
             </span>
 
+            <YouTube
+              videoId={"Pgn7CwIjHvU"}
+              className={"w-full h-full shadow-md shadow-black/30 z-10"}
+              iframeClassName={"w-full h-[600px]"}
+            />
+
             <button
               className="bg-accent text-black p-3 rounded-full text-base font-bold py-4 mt-5 max-w-[300px] mx-auto"
               onClick={scrollToTop}
