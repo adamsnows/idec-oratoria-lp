@@ -284,13 +284,12 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="bg-[#0a0a0a]  w-full">
-        <h1 className="text-3xl font-bold text-center text-white mt-10">
-          DEPOIMENTOS
-        </h1>
         <div className="container grid grid-cols-1 gap-2 py-10">
           <YouTube
-            videoId={"Pgn7CwIjHvU"}
-            className={"w-full h-full shadow-md shadow-black/30 z-10"}
+            videoId={"pmxmszQ5JuY"}
+            className={
+              "shadow-md shadow-black/30 z-10 h-[500px] w-[279px] mx-auto"
+            }
             iframeClassName={"w-full h-full"}
           />
         </div>
