@@ -146,12 +146,12 @@ const Hero: React.FC = () => {
           <img
             src="/banners/formacao/oratoria.png"
             alt=""
-            className="rounded-lg max-h-[500px] max-w-[550px] mx-auto"
+            className="rounded-lg max-h-[500px] lg:max-w-[550px] mx-auto"
           />
           <img
             src="/banners/formacao/oratoria-2.png"
             alt=""
-            className="rounded-lg max-h-[500px] max-w-[550px] mx-auto"
+            className="rounded-lg max-h-[500px] lg:max-w-[550px] mx-auto"
           />
         </div>
       </div>
