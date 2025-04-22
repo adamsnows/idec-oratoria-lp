@@ -1,1 +1,1 @@
-# Deploy: https://home.idecbrasil.com.br
+# Deploy: https://oratoria-idec.vercel.app
